@@ -16,3 +16,5 @@ export default {
     // Dummy
     usFlag
 }
+
+// assets/images/wallie-logo.png

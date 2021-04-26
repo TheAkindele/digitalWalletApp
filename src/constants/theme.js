@@ -9,11 +9,16 @@ export const COLORS = {
     green: "#66D59A",
     lightGreen: "#E6FEF0",
 
+    blue: "#FFF9EC",
+    mediumBlue: "#4d79ff",
+
     lime: "#00BA63",
     emerald: "#2BC978",
 
     red: "#FF4134",
     lightRed: "#FFF1F0",
+
+    lightOrange: "#ffa31a",
 
     purple: "#6B3CE9",
     lightpurple: "#F3EFFF",
