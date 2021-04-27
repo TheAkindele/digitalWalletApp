@@ -1,9 +1,9 @@
 import * as React from "react"
-import {SafeAreaProvider} from "react-native-safe-area-context"
+import {ScrollView} from "react-native"
 import { NavigationContainer } from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Login, SignUp} from "./src/screens/register"
-import {AuthPage} from "./src/screens/authPage/AuthPage"
+import {AuthPage} from "./src/screens/authPages/AuthPage"
 // import {HomePage} from "./src/screens/LandingPage"
 
 
@@ -13,7 +13,7 @@ const App = () => {
   const [auth, setAuth] = React.useState(false)
 
   return (
-    <SafeAreaProvider>
+    // <SafeAreaProvider>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login" headerMode="none">
       <Stack.Screen name="Login" component={Login} />
@@ -21,7 +21,7 @@ const App = () => {
       <Stack.Screen name="Auth" component={AuthPage} />
       </Stack.Navigator>
     </NavigationContainer>
-    </SafeAreaProvider>
+    // </SafeAreaProvider>
   );
 };
 

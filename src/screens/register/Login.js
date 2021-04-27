@@ -44,7 +44,7 @@ export const Login = ({navigation}) => {
             >
                 Dont Have An Account? {" "}
                 <Text
-                    style={{color: COLORS.green, fontWeight: "bold"}}
+                    style={{color: "#00ff00", fontWeight: "bold"}}
                     onPress={() => navigation.navigate("Signup")}
                 >
                     Sign Up

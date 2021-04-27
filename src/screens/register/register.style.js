@@ -70,7 +70,7 @@ export const authStyle = StyleSheet.create({
         marginRight: 3,
     },
     backtext: {
-        color: "white",
+        color: "#00ff00",
         fontWeight: "600",
     },
 })
