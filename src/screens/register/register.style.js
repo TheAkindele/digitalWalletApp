@@ -47,10 +47,8 @@ export const authStyle = StyleSheet.create({
         width: 22,
         height: 22,
         padding: 2,
-        borderWidth: 1,
-        borderColor: "red",
     },
-    toggleEye: {
+    eyeToggle: {
         resizeMode: "contain",
         width: "100%",
         height: "100%",

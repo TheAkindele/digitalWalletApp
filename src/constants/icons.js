@@ -34,16 +34,17 @@ const profile = require("../assets/newIcons/profile.png")
 const home = require("../assets/newIcons/home.png")
 const homeActive = require("../assets/newIcons/homeActive.png")
 const circle = require("../assets/newIcons/circle.png")
+const arrowLeft = require("../assets/newIcons/left-arrow.png")
 
 
 export default {
-    back,
+    
     bell,
     bill,
     close,
-    disable_eye,
+    
     down,
-    eye,
+    
     game,
     barcode,
     info,
@@ -57,6 +58,9 @@ export default {
     wallet,
 
     // my newly downloaded icon images
+    disable_eye,
+    eye,
+    back,
     newTransfer,
     newWeb,
     newWallet,
@@ -73,5 +77,7 @@ export default {
     profile,
     home,
     homeActive,
-    circle
+    circle,
+    arrowLeft
 }
+

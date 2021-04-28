@@ -5,16 +5,20 @@ import {COLORS, FONTS, images, icons, SIZES } from "../../constants"
 import {Button} from "../../components"
 
 export const SignUp = ({navigation}) => {
+    const [security, setSecurity] = React.useState(true)
+
+    const toggleEye = () => {
+        setSecurity(!security)
+    }
 
     return (
-        <ScrollView>
-        <View style={authStyle.container}>
+        <ScrollView style={authStyle.container}>
             <TouchableOpacity 
                 style={authStyle.backBtn}  
                 onPress={() => navigation.goBack()}
             >
                 <Image
-                    source={icons.back}
+                    source={icons.arrowLeft}
                     style={authStyle.backImg}
                 />
                 <Text style={authStyle.backtext}>
@@ -62,15 +66,16 @@ export const SignUp = ({navigation}) => {
                     placeholder="Enter Your Password"
                     style={authStyle.inputStyle}
                     placeholderTextColor={COLORS.white}
-                    secureTextEntry={true}
+                    secureTextEntry={security}
                 />
-                <TouchableOpacity style={authStyle.eyeBox}>
-                    <Image source={icons.disable_eye} style={authStyle.toggleEye} />
+                <TouchableOpacity 
+                    style={authStyle.eyeBox}
+                    onPress={() => toggleEye()}
+                >
+                    <Image source={security ? icons.disable_eye : icons.eye} style={authStyle.eyeToggle} />
                 </TouchableOpacity>
             </View>
-            
             <Button />
-        </View>
         </ScrollView>
     )
 }

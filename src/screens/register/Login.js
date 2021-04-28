@@ -5,6 +5,12 @@ import {authStyle} from "./register.style"
 import {Button} from "../../components"
 
 export const Login = ({navigation}) => {
+    const [security, setSecurity] = React.useState(true)
+
+    const toggleEye = () => {
+        setSecurity(!security)
+    }
+    
     const changePage = () => navigation.navigate("Auth")
 
     return (
@@ -32,10 +38,13 @@ export const Login = ({navigation}) => {
                     placeholder="Enter your Password"
                     style={authStyle.inputStyle}
                     placeholderTextColor={COLORS.white}
-                    secureTextEntry={true}
+                    secureTextEntry={security}
                 />
-                <TouchableOpacity style={authStyle.eyeBox}>
-                    <Image source={icons.disable_eye} style={authStyle.toggleEye} />
+                <TouchableOpacity 
+                    style={authStyle.eyeBox}
+                    onPress={() => toggleEye()}
+                >
+                    <Image source={security ? icons.disable_eye : icons.eye} style={authStyle.eyeToggle} />
                 </TouchableOpacity>
             </View>
 

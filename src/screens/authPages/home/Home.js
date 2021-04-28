@@ -8,20 +8,7 @@ import {COLORS, FONTS, images, icons, SIZES } from "../../../constants"
 export const HomePage = ({navigation}) => {
 
     return (
-        <View style={homeStyles.container}>
-            {/* <TouchableOpacity 
-                style={authStyle.backBtn}  
-                onPress={() => navigation.goBack()}
-            >
-                <Image
-                    source={icons.back}
-                    style={authStyle.backImg}
-                />
-                <Text style={[authStyle.backtext, {color: "black"}]}>
-                    To Login
-                </Text>
-            </TouchableOpacity> */}
-
+        <ScrollView style={homeStyles.container}>
             <View style={homeStyles.top}>
                 <View style={homeStyles.welcome}>
                     <View style={homeStyles.profile}>
@@ -29,9 +16,10 @@ export const HomePage = ({navigation}) => {
                     </View>
                     <Text style={homeStyles.hello}>Hello, Bello !</Text>
                 </View>
-                <View style={homeStyles.bellBox}>
+                <TouchableOpacity style={homeStyles.bellBox}>
+                    <Text style={homeStyles.notification}>2</Text>
                     <Image source={icons.newBell} style={homeStyles.bell} />
-                </View>
+                </TouchableOpacity>
             </View>
 
             <View style={homeStyles.main}>
@@ -141,10 +129,22 @@ export const HomePage = ({navigation}) => {
             </View>
             <View style={homeStyles.boxWithShadow}>
                     <Text style={[homeStyles.title, {color: "white"}]}>Special Promo</Text>
-                    <Text style={[homeStyles.subTitle, {color: "white"}]}>View all</Text>
-            </View>
-           
-        </View>
+                    {/* <Text style={[homeStyles.subTitle, {color: "white"}]}>View all</Text> */}
+
+                    <TouchableOpacity 
+                        style={[authStyle.backBtn, {marginTop: 0}]}  
+                        onPress={() => navigation.navigate("Login")}
+                    >
+                        <Image
+                            source={icons.back}
+                            style={authStyle.backImg}
+                        />
+                        <Text style={[authStyle.backtext, {color: "white"}]}>
+                            To Login
+                        </Text>
+                    </TouchableOpacity>
+            </View>      
+        </ScrollView>
     );
 }
 

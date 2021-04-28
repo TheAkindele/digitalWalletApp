@@ -27,7 +27,15 @@ export const homeStyles = StyleSheet.create({
         marginLeft: 12,
     },
     bellBox: {
-        marginRight: 5
+        marginRight: 5,
+        position: "relative",
+    },
+    notification: {
+        position: "absolute",
+        top: -7,
+        right: -1,
+        color: COLORS.red,
+        fontWeight: "800",
     },
     main: {
         backgroundColor: COLORS.mediumBlue,
