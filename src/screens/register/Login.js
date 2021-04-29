@@ -14,8 +14,7 @@ export const Login = ({navigation}) => {
     const changePage = () => navigation.navigate("Auth")
 
     return (
-        // <ScrollView>
-        <View style={authStyle.container}>
+        <ScrollView style={authStyle.container}>
             <View style={[authStyle.imageContStyle, {marginTop: "42%"}]}>
                 <Image
                     source={images.wallieLogo}
@@ -63,8 +62,7 @@ export const Login = ({navigation}) => {
             <Button
                 action={changePage}
             />
-        </View>
-        // </ScrollView>
+        </ScrollView>
     )
 }
 

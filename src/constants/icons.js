@@ -35,6 +35,15 @@ const home = require("../assets/newIcons/home.png")
 const homeActive = require("../assets/newIcons/homeActive.png")
 const circle = require("../assets/newIcons/circle.png")
 const arrowLeft = require("../assets/newIcons/left-arrow.png")
+const menuIcon = require("../assets/newIcons/menu.png")
+const bitcoin = require("../assets/newIcons/bitcoin.png")
+const tether = require("../assets/newIcons/tether.png")
+const dollars = require("../assets/newIcons/dollars.png")
+const ethereum = require("../assets/newIcons/ethereum.png")
+const ripple = require("../assets/newIcons/ripple.png")
+const arrowDown = require("../assets/newIcons/arrow-down.png")
+const downArrow = require("../assets/newIcons/down-arrow.png")
+const upArrow = require("../assets/newIcons/up-arrow.png")
 
 
 export default {
@@ -78,6 +87,16 @@ export default {
     home,
     homeActive,
     circle,
-    arrowLeft
+    arrowLeft,
+    menuIcon,
+    tether,
+    bitcoin,
+    dollars,
+    ethereum,
+    ripple,
+    arrowDown,
+    downArrow,
+    upArrow
+
 }
 

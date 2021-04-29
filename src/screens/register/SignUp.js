@@ -11,6 +11,8 @@ export const SignUp = ({navigation}) => {
         setSecurity(!security)
     }
 
+    const changePage = () => navigation.navigate("Auth")
+
     return (
         <ScrollView style={authStyle.container}>
             <TouchableOpacity 
@@ -75,7 +77,7 @@ export const SignUp = ({navigation}) => {
                     <Image source={security ? icons.disable_eye : icons.eye} style={authStyle.eyeToggle} />
                 </TouchableOpacity>
             </View>
-            <Button />
+            <Button action={changePage} />
         </ScrollView>
     )
 }

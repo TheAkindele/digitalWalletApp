@@ -27,11 +27,14 @@ export const COLORS = {
     lightyellow: "#FFF9EC",
 
     black: "#1E1F20",
+    lightBlack: "#4d4d4d",
+
     white: "#FFFFFF",
 
     lightGray: "#FCFBFC",
     gray: "#C1C3C5",
     darkgray: "#C3C6C7",
+    tabGrey: "#666666",
 
     transparent: "transparent",
 };

@@ -24,7 +24,7 @@ export const AuthPage = () => {
                     tabBarIcon: ({focused}) => (
                         <Image 
                             source={icons.home} 
-                            style={{tintColor: focused ? COLORS.mediumBlue : "#666666"}}
+                            style={{tintColor: focused ? COLORS.mediumBlue : COLORS.tabGrey}}
                         />
                     ),
                   }}
@@ -36,8 +36,8 @@ export const AuthPage = () => {
                     tabBarLabel: 'Transactions',
                     tabBarIcon: ({focused}) => (
                         <Image 
-                            source={icons.statistics} 
-                            style={{tintColor: focused ? COLORS.mediumBlue : "#666666"}}
+                            source={icons.menuIcon} 
+                            style={{tintColor: focused ? COLORS.mediumBlue : COLORS.tabGrey}}
                         />
                     ),
                 }}
@@ -50,7 +50,7 @@ export const AuthPage = () => {
                     tabBarIcon: ({focused}) => (
                         <Image 
                             source={icons.avatar}
-                            style={{tintColor: focused ? COLORS.mediumBlue : "#666666"}}
+                            style={{tintColor: focused ? COLORS.mediumBlue : COLORS.tabGrey}}
                         />
                     ),
                 }}

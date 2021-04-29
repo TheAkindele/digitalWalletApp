@@ -124,6 +124,7 @@ export const homeStyles = StyleSheet.create({
         shadowRadius: 2,  
         elevation: 5,
         marginTop: 20,
+        marginBottom: 50,
         borderRadius: 20,
         flexDirection: "row",
         justifyContent: "space-between",
